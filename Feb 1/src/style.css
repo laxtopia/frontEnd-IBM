@@ -6,7 +6,15 @@
   }
 
 .listname{
+  padding: 30px;
   background-color: aqua;
   width: 200px;
   height: 200px;
+}
+
+#app{
+  margin: 30px;
+}
+.newClass{
+  background-color: bisque;
 }
