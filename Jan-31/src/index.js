@@ -1,11 +1,23 @@
 
-var newElem = document.createElement("hi");
-newElem.textContent = "i am new element  "
 
-var parentElem = document.getElementById("app")
-parentElem.appendChild(newElem)
+var parentElem = document.getElementById("app");
+var newElem = document.createElement("li");
+newElem.textContent = "Hola" ;
 
-console.log(newElem)
+
+
+
+
+
+// #####################################################
+
+// var newElem = document.createElement("hi");
+// newElem.textContent = "i am new element  "
+
+// var parentElem = document.getElementById("app")
+// parentElem.appendChild(newElem)
+
+// console.log(newElem)
 
 
 // ###################################################
