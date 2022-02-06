@@ -1,0 +1,32 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    
+  }
+  body{
+    background-color: greenyellow;
+
+    margin: 30px;
+    
+  }
+
+  
+
+  .form-box{
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+    max-height: 700px;
+    background-color: white ; 
+    padding : 30px;
+
+  }
+
+  .box{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+

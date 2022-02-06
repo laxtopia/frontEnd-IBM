@@ -5,7 +5,7 @@ var btn = document.getElementById("btn");
 //     alert("You've won award ")
 // });
 
-parElem.addEventListener('mouseover', function(){
+btn.addEventListener('mouseover', function(){
     parElem.classList.add("newClass");
 });
 
