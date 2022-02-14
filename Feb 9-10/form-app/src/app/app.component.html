@@ -1,0 +1,24 @@
+<form action=""  #login = "ngForm"  (ngSubmit)= "signIn(login)" >
+
+  <input type="text" placeholder="Enter Your name"  name="name" ngModel minlength="7" #name = "ngModel" required 
+  [(ngModel)]= "firstName"  >
+  <br>
+  <small *ngIf = "name.invalid && name.touched"  > Enter Valid name   <br>  </small>
+  <small *ngIf = "firstName"  >  {{firstName }}   <br>  </small>
+
+  <input type="password" placeholder="Enter Password" name="password" minlength="8" ngModel #pass = "ngModel" required >
+  <br>
+  <small *ngIf = "pass.invalid && pass.touched" > Enter Valid password <br>  </small>
+
+  <input type="text" placeholder="Enter Age" name="Age"  ngModel >
+  <br>
+
+  <input type="email" name="email" placeholder="Enter Email" email ngModel #mail = "ngModel" >
+  <br>
+  <small *ngIf = "mail.invalid"  > Enter Valid mail   <br>  </small>
+
+
+  <button type="submit" [disabled]= "login.valid == false "  >Sign In </button>
+
+
+</form>

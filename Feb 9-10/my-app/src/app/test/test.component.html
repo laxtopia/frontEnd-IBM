@@ -1,0 +1,14 @@
+<p>test works!</p>
+<h1>{{ getGreet }}</h1>
+
+
+<table>
+    <tr>
+        <th> Company  </th>
+        <th>  Contact  </th>
+        <th>Country</th>
+    </tr>
+    <tr *ngFor= " let obj of arr ">
+      <td *ngFor = " let item of obj | keyvalue"> {{ item.value }} </td>
+    </tr>
+  </table>

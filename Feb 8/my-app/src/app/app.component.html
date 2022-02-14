@@ -6,7 +6,65 @@
 <button  [disabled] = "true" >Click me </button>
 <input type="text" [readonly] = "true"  value="Cant Edit"> -->
 
-<button (click) = "subtract()" >-</button>
+<!-- <button (click) = "subtract()" >-</button>
 <h2>{{count}}</h2>
 
 <button  (click) = "add()" > + </button>
+
+
+<input type="text" [readonly] = "boolVal" >
+<button (click) = "editable()">Readonly Toggle</button> -->
+
+
+
+
+
+<!-- <input type="text" disabled = {{disable}} >      -->
+<!-- simply rendering the "disable" string  -->
+
+<!-- <input type="text" [disabled] = "disable"> -->
+<!-- renders true  -->
+
+
+
+
+
+<!-- <h1 [ngStyle] = "{ 'background-color' : 'red' }" >Hello </h1>
+<h1 [ngClass] = " 'col' ">  Hi </h1>
+<h2 class="col" >  hello world  </h2> -->
+
+
+<!-- <h1 [ngClass] = "classCheck == 'one' ? 'two' : 'three' ">  Hi </h1> -->
+
+
+<!-- <h1 *ngFor = "let item of numbers"  >  the number is {{item}}   </h1> -->
+
+<!-- <h1 *ngIf = " gg==5 ? true:false "  >  fffff   </h1> -->
+
+<!-- 
+<h1 *ngIf = "show then myThenBlock else myElseBlock">Hello</h1>
+
+<ng-template #myThenBlock>
+    <h1>Bye</h1>
+</ng-template>
+
+<ng-template #myElseBlock >
+    <h1>hi</h1>
+</ng-template> -->
+
+<!-- 
+<div [ngSwitch] = "color"  >
+    <h1 *ngSwitchCase="'red'" >Red</h1>
+    <h1 *ngSwitchCase="'blue'" >blue</h1>
+    <h1 *ngSwitchCase="'yellow'" >yellow</h1>
+    <h1 *ngSwitchDefault > Transparent  </h1>
+</div> -->
+
+
+<h1>  {{'MAYANKGUPTA@GMAIL.COM' | lowercase }} </h1>
+
+<h1>  {{'laxman@gmail.COM' | uppercase }} </h1>
+
+<h1>  {{'laxman bandi' | titlecase }} </h1>
+
+<h1>  {{ '123' | currency }} </h1>
