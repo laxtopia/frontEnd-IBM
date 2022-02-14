@@ -1,0 +1,49 @@
+<!-- <form action="" [formGroup] = "myGroup" (ngSubmit)=  "onSubmit()"   >
+    
+    <input type="text" formControlName = "fName" placeholder=" First Name"  >
+    <small class="error"  *ngIf = "fnamefunc.invalid && fnamefunc.touched  "> First Name cannot be empty    </small>
+    <br>
+
+    <input type="text" formControlName = "lName" placeholder=" Last Name" >
+    <small class="error"  *ngIf = "lnamefunc.invalid && lnamefunc.touched  "> Last Name cannot be empty    </small>
+    <br>
+    <input type="email" formControlName = "mail" placeholder="Email Address" >
+    <small class="error"  *ngIf = "mailfunc.invalid && mailfunc.touched  "> Looks like this is not an email    </small>
+    <br>
+    <input  type="password" formControlName = "pass" placeholder="Password"  >
+    <small class="error"  *ngIf = "passfunc.invalid && passfunc.touched  "> Password cannot be empty    </small>
+    <br>
+
+    
+
+
+    <button type = "submit"  [disabled]= "myGroup.valid == false " >Claim Your Free Trail</button>
+
+</form> -->
+
+
+
+<form action=""  #login = "ngForm"  (ngSubmit)= "signIn(login)" >
+
+  <input type="text" placeholder="First Name"  name="FirstName" ngModel minlength="7" #fname = "ngModel" required   >
+  <br>
+  <small  class="error" *ngIf = "fname.invalid && fname.touched"  >First Name cannot be empty   <br>  </small>
+
+  <input type="text" placeholder="Last Name" name="LastName"   ngModel  #lname = "ngModel" required>
+  <br>
+  <small  class="error" *ngIf = "lname.invalid && lname.touched"  >Last Name cannot be empty   <br>  </small>
+
+
+  <input type="email" name="email" placeholder=" Email Address" email ngModel #mail = "ngModel" required >
+  <br>
+  <small class="error"  *ngIf = "mail.invalid && mail.touched  "  >  Looks like this is not an email   <br>  </small>
+
+
+  <input type="password" placeholder=" Password" name="password" minlength="8" ngModel #pass = "ngModel" required >
+  <br>
+  <small class="error"  *ngIf = "pass.invalid && pass.touched" > Enter Valid password <br>  </small>
+
+  <button type="submit" [disabled]= "login.valid == false "  >Claim Your Free Trail </button>
+
+
+</form>

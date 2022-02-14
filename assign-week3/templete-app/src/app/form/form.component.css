@@ -1,0 +1,152 @@
+input[type=text] {
+    width: 85%;
+    height: 40px;
+    color: black;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: 1px solid rgb(200, 195, 195) ;
+    border-radius: 4px;
+    cursor: auto;
+    font-size: 1.2rem;
+    font-weight: 550;
+  }
+
+  input[type=email] {
+    width: 85%;
+    height: 40px;
+    color: black;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: 1px solid rgb(200, 195, 195) ;
+    border-radius: 4px;
+    cursor: auto;
+    font-size: 1.2rem;
+    font-weight: 550;
+  }
+
+  input[type=password] {
+    width: 85%;
+    height: 40px;
+    color: black;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: 1px solid rgb(200, 195, 195) ;
+    border-radius: 4px;
+    cursor: auto;
+    font-size: 1.2rem;
+    font-weight: 550;
+  }
+
+
+  button[type=submit] {
+    width: 97%;
+    height: 70px;
+    margin: 15px 0px;
+    color: white;
+    border: 1px solid rgb(200, 195, 195) ;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background-color: hsl(154, 59%, 51%);
+  }
+  button[type=submit]:disabled {
+    width: 97%;
+    height: 70px;
+    margin: 15px 0px;
+    color: white;
+    border: 1px solid rgb(200, 195, 195) ;
+    border-radius: 4px;
+    cursor: not-allowed;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background-color: hsl(154, 67%, 66%);
+  }
+
+  .error{
+      color: red;
+      /* border: 1px solid red ;   */
+      margin-left: 200px;
+  }
+  
+
+  
+@media (min-width: 100px) and (max-width: 600px) {
+  
+    /* CSS */
+
+    input[type=text] {
+        width: 85%;
+        height: 40px;
+        color: black;
+        padding: 14px 20px;
+        margin: 10px 0;
+        border: 1px solid rgb(200, 195, 195) ;
+        border-radius: 4px;
+        cursor: auto;
+        font-size: 1.2rem;
+        font-weight: 550;
+      }
+    
+      input[type=email] {
+        width: 85%;
+        height: 40px;
+        color: black;
+        padding: 14px 20px;
+        margin: 10px 0;
+        border: 1px solid rgb(200, 195, 195) ;
+        border-radius: 4px;
+        cursor: auto;
+        font-size: 1.2rem;
+        font-weight: 550;
+      }
+    
+      input[type=password] {
+        width: 85%;
+        height: 40px;
+        color: black;
+        padding: 14px 20px;
+        margin: 10px 0;
+        border: 1px solid rgb(200, 195, 195) ;
+        border-radius: 4px;
+        cursor: auto;
+        font-size: 1.2rem;
+        font-weight: 550;
+      }
+    
+    
+      button[type=submit] {
+        width: 100%;
+        height: 70px;
+        margin: 10px 0px;
+        color: white;
+        border: 1px solid rgb(200, 195, 195) ;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 550;
+        background-color: hsl(154, 59%, 51%);
+      }
+      button[type=submit]:disabled {
+        width: 97%;
+        height: 70px;
+        margin: 10px 0px;
+        color: white;
+        border: 1px solid rgb(200, 195, 195) ;
+        border-radius: 4px;
+        cursor: not-allowed;
+        font-size: 1.2rem;
+        font-weight: 550;
+        background-color: hsl(154, 67%, 66%);
+      }
+    
+      .error{
+          color: red;
+          /* border: 1px solid red ;   */
+          margin-left: 0px;
+      }
+    
+
+
+    
+}

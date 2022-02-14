@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url(../src/assets/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+}

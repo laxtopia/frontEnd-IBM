@@ -1,0 +1,22 @@
+<form action="" [formGroup] = "myGroup" (ngSubmit)=  "onSubmit()"   >
+    
+    <input type="text" formControlName = "fName" placeholder=" First Name"  >
+    <small class="error"  *ngIf = "fnamefunc.invalid && fnamefunc.touched  "> First Name cannot be empty    </small>
+    <br>
+
+    <input type="text" formControlName = "lName" placeholder=" Last Name" >
+    <small class="error"  *ngIf = "lnamefunc.invalid && lnamefunc.touched  "> Last Name cannot be empty    </small>
+    <br>
+    <input type="email" formControlName = "mail" placeholder="Email Address" >
+    <small class="error"  *ngIf = "mailfunc.invalid && mailfunc.touched  "> Looks like this is not an email    </small>
+    <br>
+    <input  type="password" formControlName = "pass" placeholder="Password"  >
+    <small class="error"  *ngIf = "passfunc.invalid && passfunc.touched  "> Password cannot be empty    </small>
+    <br>
+
+    
+
+
+    <button type = "submit"  [disabled]= "myGroup.valid == false " >Claim Your Free Trail</button>
+
+</form>

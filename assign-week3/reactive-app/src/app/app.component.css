@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 3px solid red ; */
+    width : 100vw;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* border: 3px solid black ; */
+    justify-content: center;
+    padding: 0 190px;
+}
+
+.learn{
+    font-weight: 1000;  font-size: 3.5rem; margin-bottom: 30px;
+}
+
+.see{
+    font-weight: 400  ; font-size: 1.2rem;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 20px
+}
+
+.try{
+    background-color: hsl(248, 32%, 49%) ;
+    color: black;
+    padding: 27px;
+    border-radius: 13px;
+    -webkit-box-shadow: 0 12px 6px -6px rgb(153, 136, 136);
+    -moz-box-shadow: 0 12px 6px -6px rgb(0 0 0 / 0.2);
+         box-shadow: 0 12px 6px -6px rgb(0 0 0 / 0.2);
+}
+
+.form-content{
+    /* border: 3px solid black; */
+    background-color: white;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 50px;
+    -webkit-box-shadow: 0 12px 6px -6px rgb(153, 136, 136);
+    -moz-box-shadow: 0 12px 6px -6px rgb(0 0 0 / 0.2);
+         box-shadow: 0 12px 6px -6px rgb(0 0 0 / 0.2);
+}
+
+
+@media (min-width: 100px) and (max-width: 600px) {
+  
+    /* CSS */
+    .parent{
+        display: flex;
+        flex-direction: column;
+        /* border: 3px solid red ; */
+        width : 100vw;
+        height: 100vh;
+    }
+
+    .content{
+        
+        display: flex;
+        flex-direction: column;
+        color: white;
+        /* border: 3px solid black ; */
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding: 0 10px;
+        margin: 40px 10px;
+    }
+
+    .learn{
+        font-weight: 900;  font-size: 2rem; margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .see{
+        font-weight: 400  ; font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .form-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        margin: 0 0 ;
+        padding-right: 25px ;
+        padding-left: 15px ;
+    }
+
+
+    .form-content{
+        /* border: 3px solid black; */
+        background-color: white;
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 30px;
+        -webkit-box-shadow: 0 12px 6px -6px rgb(153, 136, 136);
+        -moz-box-shadow: 0 12px 6px -6px rgb(0 0 0 / 0.2);
+             box-shadow: 0 12px 6px -6px rgb(0 0 0 / 0.2);
+    }
+
+
+    
+}

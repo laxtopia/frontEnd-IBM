@@ -1,1 +1,28 @@
-<p>reactive-form works!</p>
+<!-- <p>reactive-form works!</p> -->
+
+<form action="" [formGroup] = "myGroup" (ngSubmit)=  "onSubmit()"   >
+    
+    <input type="text" formControlName = "fName" placeholder="Enter First Name" >
+    <br>
+    <small *ngIf = "f.touched "> i am touched    </small>
+    <br>
+
+    <input type="text" formControlName = "lName" placeholder="Enter Last Name" >
+    <br>
+    <input type="text" formControlName = "age" placeholder="Enter Age" >
+    <br>
+
+    <div formGroupName = "address">
+        <label for="" > Address - </label>
+        <br>
+            <input type="text" name="" id="" formControlName = "street"  placeholder="street" >
+            <br>
+            <input type="text" name="" id="" formControlName = "state" placeholder="state" >
+        <br>
+
+    </div>
+
+
+    <button type = "submit">submit</button>
+
+</form>
