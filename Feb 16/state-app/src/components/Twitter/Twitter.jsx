@@ -2,15 +2,14 @@ import React from 'react'
 import { useState } from 'react';
 
 const Twitter = (props) => {
-    console.log(props);
-    const [count , setCount ] = useState(0);
-    const handleButton = (gg) => {
-        if( gg == 1 )
-            setCount(count+1);
-        else 
-            setCount(count-1);
-
-    }
+    // console.log(props.handleLike);
+    const [count , setCount ] = useState(props.objects.likes);
+    // const handleButton = (gg) => {
+    //     if( gg == 1 )
+    //         setCount(count+1);
+    //     else 
+    //         setCount(count-1);
+    // }
 
   return (
     <div>
@@ -21,11 +20,14 @@ const Twitter = (props) => {
     </div>
     <div className="content"> {props.objects.tweet} </div>
     <div className="action-like">
-        <button  onClick= { () => handleButton(1) } > +   </button>
-        <button  onClick= { () => handleButton(2) } > -   </button>
+        <button  onClick= { () => props.handleLike(props.objects.id) } > +   </button>
+        <button  onClick= {  () => props.handleDislike(props.objects.id)    } > -   </button>
    
     </div>
+    {/* <p>{count}</p> */}
     <p>{props.objects.likes}</p>
+    <input type="text" />
+
 
     </div>
   

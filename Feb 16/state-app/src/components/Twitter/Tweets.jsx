@@ -1,9 +1,10 @@
 import React from 'react'
+import { useState } from 'react';
 import Twitter from './Twitter'
 
 const Tweets = () => {
 
-    const tweet = [
+    const [tweet, setTweet] = useState([
         {
             id:1,
             name: "Elon Musk" ,
@@ -25,17 +26,42 @@ const Tweets = () => {
             likes : 40,
             tweet : " I train studs  " ,
         }
-    ]
+    ]);
 
+
+//Like function 
+
+
+
+    const handleLike = (id) =>{
+        
+        const index = tweet.findIndex( (element) => element.id == id );
+        const latestState = [...tweet];
+        latestState[index].likes+=1;
+        setTweet(latestState);
+        console.log(latestState[index].likes);
+
+    }
+
+    const handleDislike = (id) =>{
+
+        const index = tweet.findIndex( (element) => element.id == id );
+        const latestState = [...tweet];
+        latestState[index].likes-=1;
+        setTweet(latestState);
+        console.log(latestState[index].likes);
+
+    }
+
+    // console.log(tweet);
 
     const renderTweets = () => {
         return tweet.map( item => {
-            return <Twitter objects  = {item}  />
+            return <Twitter objects  = {item} handleLike = { handleLike}  handleDislike = {handleDislike}  />
         }  ) 
     }
   return (
     // tweet.map( x => <Twitter  name = {x.name} handle = {x.handle} tweet = {x.tweet}   /> )
-
     <>
        {renderTweets()}
        <h1></h1>
